@@ -1,0 +1,526 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.background-color {
+    background-color: #eceff4;
+}
+
+.background-color.bgWhite {
+    background-color: #fff;
+}
+
+.background-color {
+    background-color: #eceff4;
+}
+
+.basefont.level5 {
+    font-size: 11pt;
+}
+
+.baselink {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.basefont {
+    color: #6d6e71;
+    font-family: 'open_sansregular', sans-serif;
+    font-size: 11pt;
+    font-weight: normal;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.termsandconditions {
+    margin-top: 8px;
+    float: right;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.floatRight {
+    float: right;
+}
+
+.basefont.level3 {
+    font-size: 15pt;
+}
+
+.basefont.red {
+    color: #c00;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+.footer-img {
+    margin: 5px 0 50px;
+    width: 100%;
+    float: left;
+}
+
+.basefont.level5 {
+    font-size: 11pt;
+}
+
+.basefont.blue {
+    color: #0095da !important;
+}
+
+.basefont.light {
+    color: #939598;
+}
+
+.baselink {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.feedback {
+    height: 30px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.border.radius4 {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.border.whiteBD {
+    border-color: #fff;
+}
+
+.basefont.level6 {
+    font-size: 9pt;
+}
+
+.background-color.bgWhite {
+    background-color: #fff;
+}
+
+.baseInput {
+    width: 180px;
+    height: 38px;
+    padding: 0 10px;
+}
+
+.product-item-details {
+
+}
+
+.border.bottomBD {
+    border-top: 0;
+    border-right: 0;
+    border-left: none;
+}
+
+.border.lightGrayBD {
+    border-color: #eceff4;
+}
+
+.border.heavy10 {
+    border-width: 10px;
+}
+
+.background-color.bgWhite {
+    background-color: #fff;
+}
+
+.border.bottomBD {
+    border-top: 0;
+    border-right: 0;
+    border-left: none;
+}
+
+.border.textBD {
+    border-color: #d1d2d4;
+}
+
+.basefont.level1 {
+    font-size: 24pt;
+}
+
+.basefont.babyBlue {
+    color: #0076ab;
+}
+
+.basefont.title1 {
+    font-family: "open_sanslight";
+    font-weight: normal;
+}
+
+.border {
+    border: 1px solid #d1d2d4;
+}
+
+.border.lightGrayBD {
+    border-color: #eceff4;
+}
+
+.product-item-details {
+    width: 330px;
+    margin: 10px 0px 10px 10px;
+}
+
+.bold {
+    font-family: 'open_sanssemibold', sans-serif;
+    font-weight: bold;
+}
+
+.padding10x0 {
+    padding: 10px 0;
+}
+
+.padding5 {
+    padding: 5px;
+}
+
+.padding0x5 {
+    padding: 0px 5px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.verticalTop {
+    vertical-align: top;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.displayNone {
+    display: none;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+.token-button {
+    border: none;
+    background-color: #4caf50;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    color: #fff;
+
+}
+
+.PriceAndAvailability table {
+    width: 550px;
+    border-spacing: 0px;
+}
+
+.PriceAndAvailability td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.PriceAndAvailability th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0095da;
+    color: white;
+}
+
+.PriceAndAvailability tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+li .PandACheckbox input {
+    opacity: 1;
+    -webkit-appearance: checkbox;
+}
+
+.shipping {
+    width: 600px;
+    min-height: 500px;
+    margin: 20px auto;
+    border: 1px solid #dee2e6;
+}
+
+.shipping h3 {
+    width: 200px;
+    margin-top: -30px;
+    color: #0095da;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.api-header {
+    text-align: center;
+}
+
+.api-header h2 {
+    font-size: 1.5em;
+    color: #42b983;
+}
+
+.api-description {
+    text-align: center;
+}
+
+.apicontainer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apicontainer li {
+    margin: 0.8em 0;
+    line-height: 25px;
+    height: 28px;
+}
+
+.apicontainer label {
+    float: left;
+    width: 300px;
+    margin-right: 60px;
+    font-size: 100%;
+    text-align: right;
+}
+
+.apicontainer .button {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    font-weight: bold;
+    width: 90%;
+}
+
+a.pointer {
+    cursor: pointer;
+}
+
+.apicontainer input, select {
+    width: 45%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.abc1 {
+    width: 300px;
+}
+
+.apicontainer .dropdown-menu {
+    width: 45%;
+    padding: 2px;
+}
+
+.apicontainer .showMore {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.apicontainer .buttonContainer {
+    clear: both;
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+}
+
+.apicontainer .buttonCartContainer {
+    clear: both;
+    margin: left;
+    width: 15%;
+    padding: 0px;
+}
+
+.container-request {
+    margin: 20px auto;
+    border: 1px solid #dee2e6;
+}
+
+.apicontainer input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+.apicontainer input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+.apicontainer input::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
+.container-request h3.request-info {
+    margin: -15px 10px;
+    background-color: #fff;
+    width: 140px;
+}
+
+.container-request .method {
+    width: 45%;
+}
+
+.container-response {
+    margin: 20px auto;
+}
+
+.container-response h3.response-info {
+    background-color: #f9f3e5;
+    width: 100%;
+    padding: 3px;
+}
+
+.container-response .console {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.container-response .react-bs-table-search-form > input {
+    width: 50%;
+    float: right;
+}
+
+table.table > tbody > tr > td {
+    white-space: normal;
+}
+
+table.table > thead > tr {
+    background-color: #f9f3e5;
+}
+
+.tr-string-example {
+    background-color: cyan;
+}
+
+.error {
+    text-align: center;
+    color: red;
+}
+
+.cheapest {
+    color: red;
+}
+
+.grid-item .dropdown-menu {
+    width: 45%;
+    left: 300px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 45%;
+    padding: 1em 0em 0em 0.5em;
+}
+
+.grid-item input {
+    width: 100%;
+}
+
+.currency {
+    padding: 1px;
+    float: right;
+    color: #0095da;
+}
+
+.dropdown-menu > li > a {
+    color: #49a0de;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #3678ff !important;
+}
+
+.rbt-input-hint {
+    display: none;
+}
+
+.rbt-menu {
+    max-height: 500px;
+}
+
+.grid-item li {
+    margin: 0 0;
+}
+
+.grid-item label {
+    padding-right: 15px;
+}
+
+.apicontainer input[disabled] {
+    color: grey;
+    background: lightgrey;
+}

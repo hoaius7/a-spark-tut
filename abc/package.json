@@ -1,0 +1,44 @@
+{
+  "name": "aviall-api-web",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cp-file": "^6.0.0",
+    "react": "^16.8.1",
+    "react-awesome-modal": "^2.0.5",
+    "react-bootstrap-table": "^4.3.1",
+    "react-bootstrap-typeahead": "^3.3.5",
+    "react-confirm": "^0.1.18",
+    "react-confirm-alert": "^2.1.0",
+    "react-cookie": "^3.0.8",
+    "react-cookies": "^0.1.0",
+    "react-dom": "^16.8.1",
+    "react-google-charts": "^3.0.10",
+    "react-json-tree": "^0.11.2",
+    "react-json-view": "^1.19.1",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "redux": "^4.0.1",
+    "replace": "^1.0.1",
+    "replace-in-file": "^3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && node generate-html.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
