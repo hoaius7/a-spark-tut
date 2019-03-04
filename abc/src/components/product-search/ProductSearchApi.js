@@ -1,11 +1,10 @@
 import React, {Fragment, useState} from 'react';
 import axios from 'axios';
-import {AsyncTypeahead} from 'react-bootstrap-typeahead';
 
+import ProductSearchAutoSuggest from './ProductSearchAutoSuggest';
 import ProductSearchTable from './ProductSearchTable';
 import HeaderForApi from '../ui/HeaderForApi';
 import RestConsole from '../common/RestConsole';
-import ProductMenuItem from './ProductMenuItem';
 
 const PRODUCT_SEARCH_API_URL = process.env.REACT_APP_PRODUCT_SEARCH_API_URL;
 const ERROR_MSG_API_KEY_MISSING  = process.env.REACT_APP_ERROR_API_KEY_MISSING;
@@ -24,7 +23,6 @@ const productSearchApi = () => {
     const [sizePerPage, setSizePerPage] = useState(+DEFAULT_SIZE_PER_PAGE);
     const [currentPage, setCurrentPage] = useState(1);
     const [isLoading, setIsLoading] = useState(false);
-    const [options, setOptions] = useState([]);
 
     const buildMetadata = (startTime, res) => {
         return {
@@ -127,58 +125,6 @@ const productSearchApi = () => {
             });
     }
 
-    const _handleSearch = query => {
-        setIsLoading(true);
-        setProductCodes(query);
-
-        const auth = {headers: {'x-api-key': apiKey}};
-        let url = PRODUCT_SEARCH_API_URL + '?typeAhead=' + query;
-
-        axios.get(url, auth)
-            .then(res => {
-                let products = [];
-                let count = 0;
-                if (res.data.suggestions && res.data.suggestions.length > 0) {
-                    for (let i = 0; i < res.data.suggestions.length; i++) {
-                        products.push({
-                            id: count++,
-                            isClickable: false,
-                            code: res.data.suggestions[i].term
-                        });
-                    }
-                }
-                if (res.data.products && res.data.products.length > 0) {
-                    for (let i = 0; i < res.data.products.length; i++) {
-                        let imgSrc = 'https://www.aviall.com/content-images/327=3V_280.JPG';
-                        if (res.data.products[i].images && res.data.products[i].images.length > 0 && res.data.products[i].images[0].url) {
-                            imgSrc = res.data.products[i].images[0].url;
-                        }
-                        products.push({
-                            id: count++,
-                            isClickable: true,
-                            code: res.data.products[i].code,
-                            partNumber: res.data.products[i].shortCode,
-                            name: res.data.products[i].name,
-                            imgSrc: imgSrc
-                        });
-                    }
-                }
-
-                setIsLoading(false);
-                setOptions(products);
-            });
-    }
-
-    const _handleSelected = selected => {
-        if (selected && selected.length > 0) {
-            if (selected[0].isClickable) {
-                window.location = 'https://www.aviall.com/aviallstorefront/p/' + selected[0].code;
-            } else {
-                setProductCodes(selected[0].code);
-            }
-        }
-    }
-
     const onPageChange = (page, sizePerPage) => {
         console.log(page + '=' + sizePerPage);
         searchProducts2(page, sizePerPage);
@@ -207,16 +153,9 @@ const productSearchApi = () => {
                         <label>Product codes</label>
                     </div>
                     <div className="grid-item">
-                        <AsyncTypeahead
-                            isLoading={isLoading}
-                            options={options}
-                            onChange={selected => _handleSelected(selected)}
-                            filterBy={option => option}
-                            labelKey="code"
-                            minLength={3}
-                            onSearch={_handleSearch}
-                            useCache={false}
-                            renderMenuItemChildren={product => <ProductMenuItem key={product.id} product={product}/>} />
+                        <ProductSearchAutoSuggest
+                            value={productCodes}
+                            onChange={(event, { newValue }) => setProductCodes(newValue)} />
                     </div>
                 </div>
                 <div className="buttonContainer">

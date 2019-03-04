@@ -344,14 +344,6 @@ li .PandACheckbox input {
     height: 28px;
 }
 
-.apicontainer label {
-    float: left;
-    width: 300px;
-    margin-right: 60px;
-    font-size: 100%;
-    text-align: right;
-}
-
 .apicontainer .button {
     background-color: #4caf50; /* Green */
     border: none;
@@ -471,10 +463,6 @@ table.table > thead > tr {
     color: red;
 }
 
-.cheapest {
-    color: red;
-}
-
 .grid-item .dropdown-menu {
     width: 45%;
     left: 300px;
@@ -496,16 +484,13 @@ table.table > thead > tr {
     color: #0095da;
 }
 
-.dropdown-menu > li > a {
+.autosuggest {
     color: #49a0de;
 }
 
-.dropdown-menu > li > a:hover {
+.autosuggest:hover {
     color: #3678ff !important;
-}
-
-.rbt-input-hint {
-    display: none;
+    cursor: pointer;
 }
 
 .rbt-menu {
